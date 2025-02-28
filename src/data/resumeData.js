@@ -44,18 +44,34 @@ const resumeData = {
 
     projects: [
         {
-            title: "Разработка веб-приложения для резюме",
-            description: "Создание интерактивного резюме с использованием React и API для загрузки данных.",
-            link: "https://github.com/yourproject"
+            title: "Веб-приложение для резюме",
+            description: "Интерактивное резюме с React и API.",
+            link: "https://github.com/yourproject",
+            image: "https://yourproject.com/preview.jpg" // Добавь превью проекта
         },
         {
             title: "AI-комментатор для видео",
-            description: "Сервис, который анализирует видео и добавляет автоматические комментарии.",
-            link: "https://yourproject.com"
+            description: "Сервис, который анализирует видео и добавляет комментарии.",
+            link: "https://yourproject.com",
+            image: "https://yourproject.com/preview2.jpg"
+        },
+        {
+            title: "AI-комментатор для видео",
+            description: "Сервис, который анализирует видео и добавляет комментарии.",
+            link: "https://yourproject.com",
+            image: "https://yourproject.com/preview2.jpg"
+        },
+        {
+            title: "AI-комментатор для видео",
+            description: "Сервис, который анализирует видео и добавляет комментарии.",
+            link: "https://yourproject.com",
+            image: "https://unsplash.com/s/photos/funny-cat"
         }
     ],
 
+
     contacts: [
+        { type: "Phone", value: "+78888888888", link: "https://t.me/username" },
         { type: "Email", value: "your.email@example.com", link: "mailto:your.email@example.com" },
         { type: "LinkedIn", value: "linkedin.com/in/yourprofile", link: "https://linkedin.com/in/yourprofile" },
         { type: "GitHub", value: "github.com/yourusername", link: "https://github.com/yourusername" }

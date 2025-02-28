@@ -1,6 +1,8 @@
 import './App.css';
 import resumeData from './data/resumeData';
 import Header from './components/header.jsx';
+import FixedContacts from './components/fixedContacts.jsx';
+import ProjectsSlider from "./components/projectsSlider.jsx";
 import Footer from './components/footer.jsx';
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <div className="root_wrapper">
       <h1 className="visually-hidden">Portfolio page</h1>
       <Header />
+      <FixedContacts />
       <div className="main-container">
         <h2 className="visually-hidden">Резюме</h2>
 
@@ -62,7 +65,8 @@ function App() {
         </section>
 
         <section className="cv-section projects">
-          <h3 className="section-title">Проекты</h3>
+          <ProjectsSlider/>
+          {/* <h3 className="section-title">Проекты</h3>
           <ul className="projects_list">
             {resumeData.projects.map((project, index) => (
               <li key={index} className="projects_item">
@@ -71,7 +75,7 @@ function App() {
                 <a href={project.link} className="projects_link" target="_blank" rel="noopener noreferrer">Подробнее</a>
               </li>
             ))}
-          </ul>
+          </ul> */}
         </section>
 
         <section className="cv-section contacts" id="contact">
