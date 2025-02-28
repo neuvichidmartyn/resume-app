@@ -1,5 +1,6 @@
 import './footer.css';
 import resumeData from '../data/resumeData.js';
+import resumeData from '../data/resumeData.js';
 
 function Footer() {
   return (
