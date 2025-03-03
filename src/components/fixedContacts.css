@@ -1,16 +1,17 @@
-.fixed-contacts {
-    position: fixed;
-    left: 0;
-    top: 30%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 100;
-  }
+.fixed-buttons {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 100;
+}
   
   /* Кнопка контактов */
-  .contacts-button {
+  .contacts-button,
+  .download-button-fixed {
     background: #FF6F61;
     color: white;
     border: none;
@@ -27,7 +28,9 @@
   }
   
   /* Иконка 📩 всегда видна, текст скрыт по умолчанию */
-  .contacts-button .text {
+  .contacts-button .text,
+  .download-button-fixed .text,
+  .download-button-fixed .text {
     opacity: 0;
     transition: opacity 0.3s;
     margin-left: 5px;
@@ -35,6 +38,7 @@
   
   /* При наведении кнопка расширяется, и текст виден */
   .contacts-button:hover,
+  .download-button-fixed:hover,
   .contacts-button.expanded {
     background: #FF9A8B;
     width: 120px;
@@ -42,6 +46,7 @@
   }
   
   .contacts-button:hover .text,
+  .download-button-fixed:hover .text,
   .contacts-button.expanded .text {
     opacity: 1;
   }

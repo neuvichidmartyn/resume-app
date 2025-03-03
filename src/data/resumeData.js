@@ -2,15 +2,16 @@ const resumeData = {
     name: "Мартынов Дмитрий",
     profession: "Legal technologies specialist",
     skills: ["Legal expertise", "SQL", "Frontend", "Python"],
-    
+
     description: [
-        {paragraph: "Бакалавр факультета права ВШЭ (июнь 2025 г.), планирую развиваться в направлении LegalTech – автоматизации юридических процессов"},
-        {paragraph: "Интересуюсь корпоративным, санкционным правом, а также направлением IT / IP"}
+        { paragraph: "Бакалавр факультета права ВШЭ (июнь 2025 г.), планирую развиваться в направлении LegalTech – автоматизации юридических процессов" },
+        { paragraph: "Интересуюсь корпоративным, санкционным правом, а также направлением IT / IP" }
     ],
 
     photo: [
-        {type: "photo",
-         path: "/mda-photo.jpg"
+        {
+            type: "photo",
+            path: "/mda-photo.jpg"
         }
     ],
 
@@ -46,26 +47,26 @@ const resumeData = {
         {
             title: "Веб-приложение для резюме",
             description: "Интерактивное резюме с React и API.",
-            link: "https://github.com/yourproject",
-            image: "https://yourproject.com/preview.jpg" // Добавь превью проекта
+            link: "https://neuvichidmartyn.github.io/2249401-kekstagram-29/",
+            // image: "https://yourproject.com/preview.jpg" // Добавь превью проекта
+        },
+        {
+            title: "AI-комментатор для видео",
+            description: "Сервис, который анализирует видео и добавляет комментарии.",
+            link: "https://neuvichidmartyn.github.io/Device-1/",
+            // image: "https://yourproject.com/preview2.jpg"
+        },
+        {
+            title: "AI-комментатор для видео",
+            description: "Сервис, который анализирует видео и добавляет комментарии.",
+            link: "https://github.com/BAEstudent/Final_Project",
+            // image: "https://yourproject.com/preview2.jpg"
         },
         {
             title: "AI-комментатор для видео",
             description: "Сервис, который анализирует видео и добавляет комментарии.",
             link: "https://yourproject.com",
-            image: "https://yourproject.com/preview2.jpg"
-        },
-        {
-            title: "AI-комментатор для видео",
-            description: "Сервис, который анализирует видео и добавляет комментарии.",
-            link: "https://yourproject.com",
-            image: "https://yourproject.com/preview2.jpg"
-        },
-        {
-            title: "AI-комментатор для видео",
-            description: "Сервис, который анализирует видео и добавляет комментарии.",
-            link: "https://yourproject.com",
-            image: "https://unsplash.com/s/photos/funny-cat"
+            // image: "https://unsplash.com/s/photos/funny-cat"
         }
     ],
 

@@ -1,4 +1,5 @@
 import './App.css';
+import { useRef } from "react";
 import resumeData from './data/resumeData';
 import Header from './components/header.jsx';
 import FixedContacts from './components/fixedContacts.jsx';
@@ -6,14 +7,15 @@ import ProjectsSlider from "./components/projectsSlider.jsx";
 import Footer from './components/footer.jsx';
 
 function App() {
+  const resumeRef = useRef(null);
   return (
     <div className="root_wrapper">
       <h1 className="visually-hidden">Portfolio page</h1>
       <Header />
-      <FixedContacts />
-      <div className="main-container">
+      <FixedContacts resumeRef={resumeRef} />
+      
+      <div className="main-container" ref={resumeRef}>
         <h2 className="visually-hidden">Резюме</h2>
-
         <section className="cv-section profile">
           <h3 className="main-title">{resumeData.name}</h3>
           <p className="profile_profession">{resumeData.profession}</p>
@@ -65,7 +67,7 @@ function App() {
         </section>
 
         <section className="cv-section projects">
-          <ProjectsSlider/>
+          <ProjectsSlider />
           {/* <h3 className="section-title">Проекты</h3>
           <ul className="projects_list">
             {resumeData.projects.map((project, index) => (
