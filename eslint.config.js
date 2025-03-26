@@ -10,7 +10,7 @@ export default [
     files: ['**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: globals.browser, // Браузерная среда для клиентских файлов
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -33,6 +33,14 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+  // Переопределение для серверных файлов
+  {
+    files: ['backend/**/*.js'], // Или ['server.js'], если это один файл
+    languageOptions: {
+      globals: globals.node, // Среда Node.js
+      sourceType: 'commonjs', // CommonJS для require
     },
   },
 ]
